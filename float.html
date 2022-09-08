@@ -119,6 +119,17 @@
             color: blue;
             background-color: aquamarine;
         }
+        .transition{
+            width: 50px;
+            height:50px;
+            transition: width 2s,height 2s, transform 1s;
+        }
+        .transition:hover{
+            width:50px;
+            height:50px;
+            transform:rotate(360deg);
+        }
+     
     </style>
 </head>
 
@@ -178,9 +189,12 @@
         </div>
         <div class="footer">
             <h2> &copy; e-learning.com</h2>
-            <p style="margin-left: 850px; color: rgb(0, 0, 0); font-weight: bolder;">Contact-Us</p>
-            <li style="margin-left: 900px; font-weight: bolder ;">8562345872</li><br>
-            <li style="margin-left: 900px; font-weight: bolder;">9164164511</li>
+            <img style="margin-left: 500 px;" class="transition"  src="images/logo.jpg" height="50px" width="100px" alt="CSS"> <br>      
+            <p style="margin-left: 600px; margin-bottom: 2000px; color: rgb(0, 0, 0); font-weight: bolder;">Contact-Us:  8951897993</p>
+            
+            
+           
+                 
         </div>
     </div>
 </body>
