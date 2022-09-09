@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function submit() {
+
+
+            number = parseInt(document.getElementById("number").value);
+            var rem, i;
+            var reverse = 0, sum = 0;
+
+            while (number > 0) {
+                rem = number % 10;
+                reverse = reverse * 10 + rem;
+
+                number = parseInt(number / 10);
+                sum = sum + rem;
+            }
+
+            document.write("After reversing the number is: " + reverse + "<br>" + "<br>");
+            document.write("The sum of those numbers is: " + sum + "<br>");
+
+
+        }
+    </script>
+
+    <br>
+    <label for="">Enter The Number:</label>
+    <input id="number"><button onclick="submit()">Submit</button>
+
+</body>
+
+</html>
