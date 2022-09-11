@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    Employee name:<input type="text" name="Enter employee name " id="ename"><br><br>
-    Designation: <input type="text" name="Enter designation" id="edesignation"><br><br>
-  
-    Salary:    <input type="text" name="Enter Salary" id="esalary"><br><br>
-    <input type="button" value="Submit" onclick="submit()">
-    <script>
-        function submit(){
-            employeename=document.getElementById("ename").value;
-            employeedesignation=document.getElementById("edesignation").value;
-            employeesalary=document.getElementById("esalary").value;
-            class Salary{
-                constructor(employeename,employeedesignation,employeesalary)
-                {
-                    this.employeename=employeename;
-                    this.employeedesignation=employeedesignation;
-                    this.employeesalary=employeesalary;
-                }
-                calculatebonus(){
-                      if(employeedesignation=="IT")
-                      {
-                        var bonus=(employeesalary)*(50/100);
-                        document.write(employeename+" your bonus is "+ bonus);
-                      }
-                      else if(employeedesignation=="Testing")
-                      {
-                        var bonus=(employeesalary)*(45/100);
-                        document.write(employeename+" your bonus is "+ bonus);
 
-                      }
-                      else if(employeedesignation=="Admin"){
-                        var bonus=(employeesalary)*(30/100);
-                        document.write(employeename+" your bonus is "+ bonus);
-                      }
-                      else{
-                        var bonus=(employeesalary)*(20/100);
-                        document.write(employeename+" your bonus is "+ bonus);
-                      }
+<body style="background-color:brown ;">
+    <center>
+        <fieldset style="width: 400px; margin-top: 100px; padding-top: 30px; background-color: bisque;">
+
+
+
+            Employee name:<input type="text" name="Enter employee name " id="ename"><br><br>
+            Designation: <input type="text" name="Enter designation" id="edesignation"><br><br>
+
+            Salary: <input type="text" name="Enter Salary" id="esalary"><br><br>
+            <input type="button" value="Submit" onclick="submit()">
+        </fieldset>
+    </center>
+    <script>
+        function submit() {
+            employeename = document.getElementById("ename").value;
+            employeedesignation = document.getElementById("edesignation").value;
+            employeesalary = document.getElementById("esalary").value;
+            class Salary {
+                constructor(employeename, employeedesignation, employeesalary) {
+                    this.employeename = employeename;
+                    this.employeedesignation = employeedesignation;
+                    this.employeesalary = employeesalary;
                 }
-               
+                calculatebonus() {
+                    if (employeedesignation == "IT") {
+                        var bonus = (employeesalary) * (50 / 100);
+                        alert(employeename + " your bonus is " + bonus);
+                    }
+                    else if (employeedesignation == "Testing") {
+                        var bonus = (employeesalary) * (45 / 100);
+                        alert(employeename + " your bonus is " + bonus);
+
+                    }
+                    else if (employeedesignation == "Admin") {
+                        var bonus = (employeesalary) * (30 / 100);
+                        alert(employeename + " your bonus is " + bonus);
+                    }
+                    else {
+                        var bonus = (employeesalary) * (20 / 100);
+                        alert(employeename + " your bonus is " + bonus);
+                    }
+                }
+
             }
-            var s1=new Salary();
-                s1.calculatebonus();
+            var s1 = new Salary();
+            s1.calculatebonus();
         }
     </script>
 
 </body>
+
 </html>
