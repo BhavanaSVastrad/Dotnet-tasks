@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Username: <input type="text" id="user"><br><br>
+   Password: <input type="password" id="pass"><br><br>
+   <input type="button" onclick="submit()" value="Submit">
+   <script>
+    function submit(){
+        
+        username=document.getElementById("user").value;
+        password=document.getElementById("pass").value;
+        alert("Welcome "+ username+ " you have sucessfully signed in!!");
+        var username1=prompt("Enter the username");
+
+        class Login{
+            constructor(username,password){
+                this.username=username;
+                this.password=password;
+            }
+        checkuernamepassword(){
+            if(username1==username )
+            {
+                alert("Welcome "+username1);
+            
+                var password1=prompt(username1+" Enter password");
+
+                if(password1==password)
+                {
+                    document.writeln(username1+" you have sucessfully logged in!!");
+                }
+                else{
+                    document.writeln(username1+" your password is incorrect try again with correct password!!");
+                }
+            }
+            else{
+                document.writeln("Username is inccorect!!");
+            }
+        }
+        
+        }
+        var l1=new Login();
+        l1.checkuernamepassword();
+
+    }
+    
+
+   </script>
+</body>
+</html>
